@@ -39,9 +39,7 @@
   </dependencies>
 
   <build>
-  
-    
-    <defaultGoal>install</defaultGoal>
+ 
    
  
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -62,8 +60,8 @@
 		<artifactId>maven-compiler-plugin</artifactId>
 		<version>3.5.1</version>
 			<configuration>
-				<source>${jdk.16.0.1}</source>
-				<target>${jdk.l6.0.1}</target>
+				<source>1.8</source>
+				<target>1.8</target>
 			</configuration>
 	</plugin>
         <plugin>
@@ -72,7 +70,7 @@
         <version>3.0.0-M5</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>NAukriUpdate.xml</suiteXmlFile>
+            <suiteXmlFile>NaukriUpdate.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

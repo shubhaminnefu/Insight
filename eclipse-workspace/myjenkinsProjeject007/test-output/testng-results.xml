@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="0" passed="0" failed="0" skipped="0">
+<testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-17T06:46:19Z" name="Default suite" finished-at="2021-06-17T06:46:19Z" duration-ms="20">
+  <suite started-at="2021-06-17T07:52:28Z" name="Default suite" finished-at="2021-06-17T07:52:50Z" duration-ms="21372">
     <groups>
     </groups>
-    <test started-at="2021-06-17T06:46:19Z" name="Default test" finished-at="2021-06-17T06:46:19Z" duration-ms="20">
+    <test started-at="2021-06-17T07:52:28Z" name="Default test" finished-at="2021-06-17T07:52:50Z" duration-ms="21372">
+      <class name="AuthLogin.myjenkinlogin">
+        <test-method signature="main()[pri:0, instance:AuthLogin.myjenkinlogin@41ee392b]" started-at="2021-06-17T13:22:50Z" name="main" finished-at="2021-06-17T13:22:50Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- main -->
+      </class> <!-- AuthLogin.myjenkinlogin -->
+      <class name="AuthLogin.MyAuthlogin">
+        <test-method signature="AuthshieldLogin()[pri:0, instance:AuthLogin.MyAuthlogin@448ff1a8]" started-at="2021-06-17T13:22:28Z" name="AuthshieldLogin" finished-at="2021-06-17T13:22:50Z" duration-ms="21256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AuthshieldLogin -->
+      </class> <!-- AuthLogin.MyAuthlogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
