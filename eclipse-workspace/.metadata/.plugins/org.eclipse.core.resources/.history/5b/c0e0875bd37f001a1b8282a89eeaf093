@@ -1,0 +1,31 @@
+package manageuser;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import login.Authlogin;
+
+public class changeAuth extends Authlogin {
+	
+  @Test
+  public void changeauth() throws InterruptedException {
+	  
+	  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	  driver.findElement(By.linkText("User")).click();
+	  driver.findElement(By.linkText("Manage User")).click();
+	  driver.findElement(By.cssSelector("a#tab_2")).click();
+	  Select id = new Select(driver.findElement(By.id("pageId_changeauth")));
+		id.selectByValue("5000");
+		//*** HardToken********
+		Thread.sleep(1000);
+		driver.findElement(By.cssSelector("input.radio-group-checkable")).click();
+		
+		driver.findElement(By.xpath("//input[@data-set='#sample_2 .hardTokenboxes']")).click();
+		System.out.println("Hard Token Change Auth");
+		 System.out.println(driver.findElement(By.id("alertBox")).getText());
+		 driver.findElement(By.id("closeBtn")).click();
+  }
+}

@@ -1,0 +1,18 @@
+package login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class myaccount extends Authlogin {
+	
+	WebDriver driver =new ChromeDriver();
+
+ public void account() {
+	 
+	// *** How to create xpath using href link with tagname a*****
+	   driver.findElement(By.cssSelector("a.dropdown-toggle")).click();
+	   driver.findElement(By.xpath("//a[@href='/mfid/logout_logOut.action']")).click();
+	   driver.quit();
+ }
+}

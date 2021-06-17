@@ -1,0 +1,32 @@
+package login;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class myaccount extends Authlogin {
+	
+	
+
+ public void account() {
+	 
+	 myaccount ac =new myaccount();
+		ac.f();	
+ }
+ 
+ public void account2() {
+	 
+	  System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
+	  WebDriver driver =new ChromeDriver();
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	   driver.manage().window().maximize();
+	   
+	  
+	   
+	 driver.findElement(By.xpath("//a[@href='/mfid/admin_showMyAccount.action?a=admit']")).click();
+	   
+	   
+ }
+}

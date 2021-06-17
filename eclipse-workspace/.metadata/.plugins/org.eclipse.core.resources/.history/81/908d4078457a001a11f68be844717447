@@ -1,0 +1,30 @@
+package login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+public class myaccount extends Authlogin {
+	
+	public WebDriver driver;
+	
+	@Test
+	
+    public void account() {
+	
+	
+	driver.findElement(By.xpath("//a[@href='/mfid/admin_showMyAccount.action?a=admin']")).click();
+
+	
+	
+}
+
+
+public void finall() {
+	myaccount log = new myaccount();
+	log.Beforetest();
+	log.f();
+	log.account();
+	
+}
+}

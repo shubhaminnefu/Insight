@@ -1,0 +1,9 @@
+package manageuser;
+
+import org.testng.annotations.Test;
+
+public class changeAuth {
+  @Test
+  public void f() {
+  }
+}

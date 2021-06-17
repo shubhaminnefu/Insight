@@ -1,0 +1,42 @@
+package manageuser;
+
+import java.util.concurrent.TimeUnit;
+
+import javax.security.auth.kerberos.KeyTab;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import login.Authlogin;
+
+public class changeAuth extends Authlogin {
+	
+  @Test
+  public void changeauth() throws InterruptedException {
+	  
+	  driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	  driver.findElement(By.linkText("User")).click();
+	  driver.findElement(By.linkText("Manage User")).click();
+	  driver.findElement(By.cssSelector("a#tab_2")).click();
+	  Select id = new Select(driver.findElement(By.id("pageId_changeauth")));
+		id.selectByValue("10");
+		//*** HardToken********
+	
+		driver.findElement(By.cssSelector("i.icon-arrow-up")).click();
+		
+		driver.findElement(By.id("userLogonId_auth")).sendKeys(Keys.TAB);
+		
+		driver.findElement(By.xpath(".//*[@id='sample_2']/thead/tr[2]/th[3]/input")).click();
+		
+		driver.findElement(By.xpath(".//*[@id='idSubmitButtonChangeAuth']")).click();
+		
+		System.out.println(driver.findElement(By.className("modal-body")).getText());
+		driver.switchTo().alert().accept();
+		
+		System.out.println("Hard Token Change Auth");
+		 System.out.println(driver.findElement(By.id("alertBox")).getText());
+		 driver.findElement(By.id("closeBtn")).click();
+  }
+}

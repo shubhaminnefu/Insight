@@ -1,0 +1,37 @@
+package setpDefinations;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Authloginlogout {
+
+	
+	
+	
+	@Given("^User is on Authshield Home Page$")
+	public void user_is_on_Authshield_Home_Page()  {
+	    
+	}
+
+	@When("^User navigate to Login Page$")
+	public void user_navigate_to_Login_Page()  {
+	   
+	}
+
+	@Then("^User enters \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_enters_and(String arg1, String arg2)  {
+	    
+	}
+
+	@Then("^User should get logged in$")
+	public void user_should_get_logged_in()  {
+	    
+	}
+
+	@Then("^Message displayed Login Successfully$")
+	public void message_displayed_Login_Successfully()  {
+	    
+	}
+	
+}

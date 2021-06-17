@@ -1,0 +1,9 @@
+package login;
+
+import org.testng.annotations.Test;
+
+public class ldapuserimport {
+  @Test
+  public void f() {
+  }
+}

@@ -1,0 +1,21 @@
+package RestassuredAPI_Testing007.RestassuredAPI_Testing007;
+
+import org.testng.annotations.Test;
+import io.restassured.RestAssured.*;
+import io.restassured.matcher.RestAssuredMatchers.*;
+import org.hamcrest.Matchers.*;
+        
+
+public class restget {
+
+	@Test
+	public  void get_demo()
+	{
+		given()
+		
+	}
+
+	
+	}
+
+

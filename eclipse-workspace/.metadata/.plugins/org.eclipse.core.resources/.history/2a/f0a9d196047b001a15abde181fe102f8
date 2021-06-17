@@ -1,0 +1,23 @@
+package login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class ldapuserimport extends Authlogin {
+	
+	
+  @Test(priority=1)
+  
+  public void ldapimp() {
+	  
+	  driver.findElement(By.cssSelector("a.icon-btn.span2")).click();
+	  
+	  driver.findElement(By.id("tab_1")).click();
+	  
+	  Select imp =new Select(driver.findElement(By.id("importSource")));
+			imp.selectByVisibleText("LDAP Data Source");
+	  
+	  
+  }
+}

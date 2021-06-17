@@ -1,0 +1,12 @@
+package AuthLogin;
+
+import org.testng.annotations.Test;
+
+public class myjenkinlogin {
+@Test
+	public static void main(String[] args) {
+		System.out.println("Hello Pravesh");
+
+	}
+
+}

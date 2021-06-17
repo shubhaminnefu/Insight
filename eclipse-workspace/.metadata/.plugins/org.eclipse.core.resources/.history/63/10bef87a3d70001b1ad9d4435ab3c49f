@@ -1,0 +1,24 @@
+package RestassuredAPI_Testing007.RestassuredAPI_Testing007;
+
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+        
+
+public class restassured {
+	
+	@Test
+	public void Get_restassured()
+	
+	{
+		given()
+		.when()
+		.get("http://192.168.2.163/mfid/otp_checkAuth.action?username=openfire&appId=0&ip=192.168.1.1")
+		.then()
+		.statusCode(200)
+		.statusLine("HTTP/1.1 200 ");
+System.out.println("get");
+	}
+	
+
+}

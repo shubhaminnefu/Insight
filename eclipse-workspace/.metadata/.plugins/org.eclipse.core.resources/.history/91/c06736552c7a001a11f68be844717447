@@ -1,0 +1,47 @@
+package login;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+public class Authlogin {
+	
+  @Test
+  
+  public void f() {
+	  
+	  System.setProperty("webdriver.chrome.driver", "C:\\selenium\\chromedriver.exe");
+	  WebDriver driver =new ChromeDriver();
+	  driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	   driver.manage().window().maximize();
+	   
+	   driver.get("http://164.100.30.208/mfid/");
+	   driver.getTitle();
+	   
+	   
+	   
+	   Select login = new Select(driver.findElement(By.name("organisationName")));
+	   login.selectByVisibleText("AuthShield");
+	   Select login1 =new Select(driver.findElement(By.name("domain")));
+	   login1.selectByVisibleText("default_domain");
+	   Select login2 =new Select(driver.findElement(By.name("application")));
+	   login2.selectByVisibleText("webmail");
+	   driver.findElement(By.id("input-username")).sendKeys("usermfid");
+	   driver.findElement(By.id("input-password")).sendKeys("qazwsx@123");
+	   driver.findElement(By.id("login-btn_remove")).click();
+	   
+	   
+
+			
+
+		}
+
+	
+	  
+	  
+	  
+  }

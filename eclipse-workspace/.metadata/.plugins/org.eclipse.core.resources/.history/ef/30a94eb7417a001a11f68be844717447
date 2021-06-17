@@ -1,0 +1,24 @@
+package login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class myaccount extends Authlogin {
+	@Test
+	
+public void account() {
+	
+	
+	WebDriver driver =new ChromeDriver();
+	driver.findElement(By.xpath("//a[@href='/mfid/logout_logOut.action']")).click();
+	//driver.findElement(By.xpath("//a[@href='/mfid/admin_showMyAccount.action?a=admin']")).click();
+	
+	
+	
+	//driver.findElement(By.xpath("//a[@href='/mfid/logout_logOut.action']")).click();
+	
+	
+}
+}
