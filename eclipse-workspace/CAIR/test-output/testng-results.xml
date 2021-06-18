@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-18T05:12:19Z" name="Default suite" finished-at="2021-06-18T05:14:30Z" duration-ms="131363">
+    <groups>
+    </groups>
+    <test started-at="2021-06-18T05:12:19Z" name="Default test" finished-at="2021-06-18T05:14:30Z" duration-ms="131363">
+      <class name="DataIngestors.DataIngest">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:DataIngestors.DataIngest@202b0582]" started-at="2021-06-18T05:12:19Z" name="beforeTest" finished-at="2021-06-18T05:12:26Z" duration-ms="7030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Login()[pri:0, instance:DataIngestors.DataIngest@202b0582]" started-at="2021-06-18T05:12:26Z" name="Login" finished-at="2021-06-18T05:12:51Z" duration-ms="25213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="DataIn()[pri:0, instance:DataIngestors.DataIngest@202b0582]" started-at="2021-06-18T05:12:51Z" name="DataIn" finished-at="2021-06-18T05:14:30Z" duration-ms="99041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataIn -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:DataIngestors.DataIngest@202b0582]" started-at="2021-06-18T05:14:30Z" name="afterTest" finished-at="2021-06-18T05:14:30Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- DataIngestors.DataIngest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
