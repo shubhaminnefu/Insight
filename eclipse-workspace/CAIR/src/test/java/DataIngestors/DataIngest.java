@@ -23,7 +23,7 @@ public class DataIngest extends InnsightLogin {
 
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers\\\\\\\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(options);
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();

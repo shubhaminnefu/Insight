@@ -39,7 +39,7 @@ public class InnsightLogin {
 
 		c.merge(ch);
 
-		System.setProperty("webdriver.chrome.driver", "D:\\selenium\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers\\\\chromedriver.exe");
 		driver = new ChromeDriver(c);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
