@@ -20,7 +20,7 @@ public class InnsightLogin {
 	@Test
 	public void Login() {
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
-		driver.get("http://office.authshieldserver.com:8081/innsight");
+		driver.get("http://server.authshieldserver.com:8081/innsight");
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
 		driver.findElement(By.cssSelector("input.textbox")).sendKeys("Pravesh");
