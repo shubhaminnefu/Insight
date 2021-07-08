@@ -46,8 +46,6 @@ public class InnsightLogin {
 
 	}
 
-	@AfterTest
-	public void afterTest() {
-	}
+	
 
 }

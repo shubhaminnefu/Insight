@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class DataIngest extends InnsightLogin {
 
 	@AfterClass
-	public void DataIn() throws InterruptedException, AWTException {
+	public void DataIn() throws Exception {
 
 		driver.findElement(By.cssSelector("input#txtTwSrch")).sendKeys("modi");
 		driver.findElement(By.cssSelector("span#searchTweet")).click();
