@@ -30,7 +30,9 @@ public class Test_Case_Number_26 extends InnsightLogin{
 		    driver.findElement(By.id("mat-input-1")).click();
 		    driver.findElement(By.id("mat-input-1")).clear();
 		    driver.findElement(By.id("mat-input-1")).sendKeys("asds");
+		    Thread.sleep(1000);
 		    driver.findElement(By.xpath("//div[@id='cdk-step-content-0-0']/form/div[2]/button/span")).click();
+		    Thread.sleep(1000);
 		    WebElement radio= driver.findElement(By.xpath("//*[@id=\"mat-radio-3\"]/label/span[1]"));
 		    System.out.println(radio.getText());
 		    radio.click();

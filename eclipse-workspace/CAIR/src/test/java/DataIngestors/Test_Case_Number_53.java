@@ -5,33 +5,28 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 
-public class Test_Case_Number_52 extends InnsightLogin{
-
+public class Test_Case_Number_53 extends InnsightLogin{
 	
-	@AfterClass
-	public void gender() throws Exception {
+	@AfterTest
+	public void summerization() throws InterruptedException {
 		//search key enter
 	    WebElement search=driver.findElement(By.id("txtTwSrch"));
-	    search.sendKeys("India AND Modi");
+	    search.sendKeys("India AND Kashmir");
 	    search.sendKeys(Keys.ENTER);
 	    Thread.sleep(1000);
-	    driver.findElement(By.id("twDashboard")).click();
-	    //
-	    JavascriptExecutor js = (JavascriptExecutor) driver;
-
-	    WebElement Element = driver.findElement(By.xpath("//*[@id=\"widget_dashboard_47-1\"]/div[2]/div[1]/span"));
-	    js.executeScript("arguments[0].scrollIntoView();", Element);
-	    
+	    driver.findElement(By.xpath("/html/body/form/div/header/div[1]/div[2]/div/div[2]/ul[1]/li[1]/a")).click();
+	    WebElement Element = driver.findElement(By.xpath("//*[@id=\"ClNewAnalysis\"]/div/div[2]/div/div[4]/div[1]/div/span"));
 	    highLighterMethod(driver, Element);
-	    
-	    ////*[@id="ClNewAnalysis"]/div/div[2]/div/div[4]/div[1]/div/span
+	    Thread.sleep(3000);
+	    driver.findElement(By.linkText("Apply")).click();
+	    driver.findElement(By.linkText("Close")).click();
+	    Thread.sleep(3000);
 	}
-	
 	public void highLighterMethod(WebDriver driver, WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].setAttribute('style', 'background:blue; border: 2px solid red;');", element);
 	}
+
 }

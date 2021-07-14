@@ -29,6 +29,7 @@ WebElement ele = driver.findElement(By.xpath("//*[@id=\"Corelation\"]/div/div/di
 	////*[@id="Corelation"]/div/div/div[2]/div/div[1]
 	public void highLighterMethod(WebDriver driver, WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
 		js.executeScript("arguments[0].setAttribute('style', 'background:blue; border: 2px solid red;');", element);
 	}
 

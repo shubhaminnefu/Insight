@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="DataIngestors.InnsightLogin">
+      <class name="DataIngestors.Test_Case_Number_52">
         <methods>
           <include name="beforeTest"/>
+          <include name="gender"/>
           <include name="Login"/>
-          <include name="afterTest"/>
         </methods>
-      </class> <!-- DataIngestors.InnsightLogin -->
+      </class> <!-- DataIngestors.Test_Case_Number_52 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

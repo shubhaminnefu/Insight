@@ -41,7 +41,7 @@ public class Test_Case_Number_40 extends InnsightLogin {
 		trackevent.sendKeys(Keys.ENTER);
 		
 		Thread.sleep(2000);
-		//driver.findElement(By.xpath("//div[@id='cdk-step-content-0-1']/form/div[2]/div/button[2]/span")).click();
+		
 		WebElement toggle=driver.findElement(By.xpath("//*[@id=\"mat-slide-toggle-10\"]/label/div"));
 		toggle.click();
 		JavascriptExecutor js=(JavascriptExecutor)driver;
